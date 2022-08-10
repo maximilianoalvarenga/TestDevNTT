@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Edição Rápida">
+        <lightning-record-edit-form
+            object-api-name={objectApiName}
+            record-id={recordId}
+            onsuccess={handleSuccess}
+        >
+        <lightning-input-field field-name={numeroConta}></lightning-input-field>
+        <lightning-input-field field-name={nomeConta}></lightning-input-field>
+        <lightning-input-field field-name={tipoConta}></lightning-input-field>
+        <div class="slds-var-m-top_medium slds-align_absolute-center">
+            <lightning-button variant="brand" type="submit" label="Salvar" >
+            </lightning-button>
+        </div>
+</lightning-record-edit-form>
+    </lightning-card>
+</template>
